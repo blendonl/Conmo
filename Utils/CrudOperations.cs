@@ -40,7 +40,7 @@ namespace Conmo.Utils {
 
         public static bool CreateObject<T>(Dependency dependency, List<Property> properties) {
              if (InitialiseProperties<T>(dependency, properties)) {
-                 Console.WriteLine($"{typeof(T).Name} created succesfully"); 
+                 Console.WriteLine($"{typeof(T).Name} created successfully"); 
                  return true;
              }
              else { 
@@ -93,7 +93,7 @@ namespace Conmo.Utils {
         public static void Remove<T>(object id) {
             if ((bool)GetDependency<T>().InvokeMethod("Remove", id)) {
                 
-                Console.WriteLine($"{typeof(T).Name} removed succesfully");
+                Console.WriteLine($"{typeof(T).Name} removed successfully");
             }
             else {
                 
